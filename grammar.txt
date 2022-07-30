@@ -1,4 +1,4 @@
-CAST_NAMES::=Ryan|Sarah|Annie|Eric
+CAST_NAMES::=Ryan|Sarah|Annie|Eric|Amanda
 SUBJECT_NM::=One|Two|Three|Four
 SUBJECT_NAMES::=Test Subject {SUBJECT_NM}
 CAST::={CAST_NAMES}|{SUBJECT_NAMES}

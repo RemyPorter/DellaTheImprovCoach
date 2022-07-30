@@ -33,6 +33,7 @@ def generate(key, grammar):
     return val
 
 def say(text):
+    print(text)
     subprocess.call(["say", "-v", "Samantha", text])
 
 
@@ -47,6 +48,12 @@ if FULL_MODE:
     To demonstrate, I've assembled a cast of the worst, most incompetent improvisers I could find. Please welcome them to the stage. The Test Subjects
     """)
     input("CAST ENTERS")
+    say("""
+    Let's introduce our test subjects.
+    """)
+    for c in grammar["CAST_NAMES"]:
+        say(f"{c}, wave your hand at the audience.")
+    input("PAUSE FOR SHOW")
     say("""
     Watch as I coach them into an acceptable show, which they definitely can't do themselves. 
     To get things started, I need a word or phrase from the height of your intelligence.
